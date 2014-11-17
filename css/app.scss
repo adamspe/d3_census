@@ -1,0 +1,22 @@
+@import "../lib/bootstrap/dist/css/bootstrap.min.css";
+@import "../lib/font-awesome/css/font-awesome.min.css";
+//@import "../lib/angular-multi-select/angular-multi-select.css"
+
+.chart {
+    border: 1px solid steelblue;
+}
+
+.circle {
+    fill: steelblue;
+    stroke: #000;
+    stroke-width: 1;
+}
+$states: L OH GA NY LA TX IA AK SC WI OK NC GA-SC CA MD WA NJ ND VA ID MA KY MT FL VT NM UT IL WV TN WY CO MO AR IA-IL MI KS DE IN PA OR ND-MN AZ CT NE MS HI MO-KS NV NH MN ME RI SD MO-IL DC-VA VA-WV;
+@each $state in $states {
+    $red: random(256)-1;
+    $green: random(256)-1;
+    $blue: random(256)-1;
+    .circle.#{$state} {
+        fill: rgb($red,$green,$blue);
+    }
+}

@@ -1,0 +1,182 @@
+@import url(../lib/bootstrap/dist/css/bootstrap.min.css);
+@import url(../lib/font-awesome/css/font-awesome.min.css);
+.chart {
+  border: 1px solid steelblue; }
+
+.circle {
+  fill: steelblue;
+  stroke: #000;
+  stroke-width: 1; }
+
+.circle.L {
+  fill: #6762ea; }
+
+.circle.OH {
+  fill: #e81f85; }
+
+.circle.GA {
+  fill: #254c78; }
+
+.circle.NY {
+  fill: #793225; }
+
+.circle.LA {
+  fill: #117ba2; }
+
+.circle.TX {
+  fill: #08d721; }
+
+.circle.IA {
+  fill: #23ad7a; }
+
+.circle.AK {
+  fill: #ac44c7; }
+
+.circle.SC {
+  fill: #4264cc; }
+
+.circle.WI {
+  fill: #ea7533; }
+
+.circle.OK {
+  fill: #73aa9a; }
+
+.circle.NC {
+  fill: #7b1e76; }
+
+.circle.GA-SC {
+  fill: #0cda11; }
+
+.circle.CA {
+  fill: #a99f4c; }
+
+.circle.MD {
+  fill: #cf6aa2; }
+
+.circle.WA {
+  fill: #c60484; }
+
+.circle.NJ {
+  fill: #0186e8; }
+
+.circle.ND {
+  fill: #efade4; }
+
+.circle.VA {
+  fill: #27f3f8; }
+
+.circle.ID {
+  fill: #3c3b3c; }
+
+.circle.MA {
+  fill: #cde552; }
+
+.circle.KY {
+  fill: #f8af61; }
+
+.circle.MT {
+  fill: #a522dc; }
+
+.circle.FL {
+  fill: #657dfc; }
+
+.circle.VT {
+  fill: #3218b3; }
+
+.circle.NM {
+  fill: #dc4d5c; }
+
+.circle.UT {
+  fill: #120686; }
+
+.circle.IL {
+  fill: #8359df; }
+
+.circle.WV {
+  fill: #ce4b0c; }
+
+.circle.TN {
+  fill: #7edbc0; }
+
+.circle.WY {
+  fill: #7dc922; }
+
+.circle.CO {
+  fill: #41b2a9; }
+
+.circle.MO {
+  fill: #8b2646; }
+
+.circle.AR {
+  fill: #e64a51; }
+
+.circle.IA-IL {
+  fill: #39cd7b; }
+
+.circle.MI {
+  fill: #afb204; }
+
+.circle.KS {
+  fill: #f28716; }
+
+.circle.DE {
+  fill: #b58d62; }
+
+.circle.IN {
+  fill: #ca9dca; }
+
+.circle.PA {
+  fill: #cbbf40; }
+
+.circle.OR {
+  fill: #ff2c3c; }
+
+.circle.ND-MN {
+  fill: #ffee1f; }
+
+.circle.AZ {
+  fill: #90c0fd; }
+
+.circle.CT {
+  fill: #e0d0c1; }
+
+.circle.NE {
+  fill: #636820; }
+
+.circle.MS {
+  fill: #48bc77; }
+
+.circle.HI {
+  fill: #6fbda1; }
+
+.circle.MO-KS {
+  fill: #742c4d; }
+
+.circle.NV {
+  fill: #068c31; }
+
+.circle.NH {
+  fill: #74ab1c; }
+
+.circle.MN {
+  fill: #5a33e2; }
+
+.circle.ME {
+  fill: #15b286; }
+
+.circle.RI {
+  fill: #987081; }
+
+.circle.SD {
+  fill: #a6f778; }
+
+.circle.MO-IL {
+  fill: #6bade3; }
+
+.circle.DC-VA {
+  fill: #a0f81e; }
+
+.circle.VA-WV {
+  fill: #099d4e; }
+
+/*# sourceMappingURL=app.css.map */

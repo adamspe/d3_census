@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cpi.d3">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lib/angular-multi-select/angular-multi-select.css" />
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+    <div class="container" ng-controller="CpiVisController">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>D3 Tinkering...</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <svg class="chart"></svg>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label>Visualize</label>
+                    <select class="form-control"
+                            ng-options="value as label for ( value, label ) in data.labels"
+                            ng-model="data.viz_key"
+                            ng-change="revisualize()"></select>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="form-group">
+                    <label>Include States</label>
+                    <div multi-select
+                             input-model="data.selections"
+                             button-label="label"
+                             item-label="label"
+                             tick-property="selected"
+                             orientation="horizontal"
+                             is-disabled="status.working"
+                             helper-elements="all none reset filter"
+                             on-close="visualize()"></div>
+                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+
+    </div>
+
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-resource/angular-resource.min.js"></script>
+<script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="lib/angular-multi-select/angular-multi-select.js"></script>
+<script src="lib/d3/d3.min.js"></script>
+<script src="js/d3Utils.js"></script>
+<script src="js/app.js"></script>
+<!--script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/directives.js"></script>
+<script src="js/filters.js"></script-->
+</body>
+</html>
