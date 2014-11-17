@@ -1,6 +1,11 @@
 cpi = {
     CHART_W: 1165,
-    CHART_H: 500
+    CHART_H: 500,
+    SMALLEST_R: 2,
+    BIGGEST_R: 100,
+    ENTER_TRANS_DURATION: 2000,
+    UPDATE_TRANS_DURATION: 2000,
+    EXIT_TRANS_DURATION: 2000,
 };
 angular.module('cpi.d3',[
     'ui.bootstrap',
@@ -23,8 +28,25 @@ angular.module('cpi.d3',[
             $scope.chartConstraints = {h: height, w: width};
         }
         $scope.revisualize = function() {
+            var key = $scope.data.viz_key,
+                domain,
+                state,state_data;
+            for(state in $scope.data.data) {
+                state_data = $scope.data.data[state].data;
+                state_data.forEach(function(d){
+                    var v = d[key];
+                    if(!domain) { domain = [v,v]; }
+                    else {
+                        if(v < domain[0]) { domain[0] = v; }
+                        if(v > domain[1]) { domain[1] = v; }
+                    }
+                });
+            }
             $scope.chart.selectAll(".circle")
                     .data([]).exit().remove();
+
+            $scope.r = d3.scale.linear().domain(domain).range([cpi.SMALLEST_R,cpi.BIGGEST_R]);
+
             $scope.visualize();
         };
         $scope.visualize = function() {
@@ -38,21 +60,23 @@ angular.module('cpi.d3',[
             h = $scope.chartConstraints.h;
             console.debug('visualize '+$scope.data.viz_key,data);
 
+            /*
             var r = d3.scale.linear()
-                    .domain(data.map(function(d){ return d[key]; }))
-                    .range([5,200]);
-
-            console.debug('r',r);
-            console.debug('constraints',$scope.chartConstraints);
+                    .domain([
+                        d3.min(data,function(d){return d[key];}),
+                        d3.max(data,function(d){return d[key];})])
+                    .range([cpi.SMALLEST_R,cpi.BIGGEST_R]);
+                    */
 
             var circles = $scope.chart.selectAll(".circle")
-                    .data(data);
+                    .data(data,function(d) { return d.urban_area; });
             circles.enter().append("circle")
                     .attr("class",function(d) { return "circle "+d.state; })
-                    .attr("r",function(d) { return Math.ceil(Math.sqrt(r(d[key]))); })
                     .attr("cx",function() { return Math.random() * w; } )
-                    .attr("cy",function() { return Math.random() * h; } );
-            circles.exit().remove();
+                    .attr("cy",function() { return Math.random() * h; } )
+                    .attr("r",0).transition().duration(cpi.ENTER_TRANS_DURATION)
+                    .attr("r",function(d) { return $scope.r(d[key]); })
+            circles.exit().transition().duration(cpi.EXIT_TRANS_DURATION).attr("r", 0).remove();
 
             $scope.status.working = false;
         };
@@ -67,11 +91,12 @@ angular.module('cpi.d3',[
                 $scope.data.selections = [];
                 for(state in $scope.data.data) {
                     $scope.data.selections.push({
+                        icon: '<i class="fa fa-circle '+ state +'"></i>',
                         label: state,
                         selected: true
                     });
                 }
-                $scope.visualize();
+                $scope.revisualize();
             });
         });
 }]);

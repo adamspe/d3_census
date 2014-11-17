@@ -32,13 +32,15 @@
                     <label>Include States</label>
                     <div multi-select
                              input-model="data.selections"
-                             button-label="label"
-                             item-label="label"
+                             button-label="icon label"
+                             item-label="icon label"
                              tick-property="selected"
                              orientation="horizontal"
                              is-disabled="status.working"
                              helper-elements="all none reset filter"
-                             on-close="visualize()"></div>
+                             on-item-click="visualize()"
+                             on-close="visualize()"
+                             ></div>
                  </div>
             </div>
         </div>
