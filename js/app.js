@@ -29,7 +29,6 @@ angular.module('cpi.d3',[
             .append('g');
         $scope.node = $scope.chart.selectAll(".node");
 
-
         $scope.visualize = function() {
             var data = $scope.data.selections.reduce(function(prev,curr,idx,arr){
                 return (curr.selected && $scope.data.data[curr.label]) ?
@@ -42,56 +41,53 @@ angular.module('cpi.d3',[
             // restart the layout
             $scope.force.nodes(data).start();
 
+            // create a new scale each time the data is updated since sizes are relative to what
+            // is currently selected (not the entire possible dataset).
             var r = d3.scale.linear()
                     .domain([
                         d3.min(data,function(d){return d[key];}),
                         d3.max(data,function(d){return d[key];})])
                     .range([cpi.SMALLEST_R,cpi.BIGGEST_R]);
 
-
+            // update the data set
             $scope.node = $scope.node.data(data,function(d) { return d.urban_area; });
-
             // exit
-            //$scope.node.exit().selectAll('.circle').transition().duration(cpi.EXIT_TRANS_DURATION).attr("r", 0).remove();
-            var exit = $scope.node.exit();
-            console.debug('exit',exit);
-            console.debug('remove',exit.remove());
+            /*
+              The difference here is obscure but important what is desired is a transition that
+              affects child elements (g/circle@r) AND when complete removes the parent.  Many
+              attempts would result with parent DOM elements lingering after the transition completed.
+            var exit = $scope.node.exit(),
+                parent_trans = exit.transition();//.duration(cpi.EXIT_TRANS_DURATION);
+            // create a chained transition to "shrink" the exiting data out of view
+            parent_trans.selectAll('.circle').transition()
+                .duration(cpi.EXIT_TRANS_DURATION)
+                .attr("r", 0)
+                .each("end",function() { console.debug('end',arguments); })
+                .remove();
+            //parent_trans.remove(); // remove parent elements after chained transition completes.
+            */
+           $scope.node.exit().transition()
+                .duration(cpi.EXIT_TRANS_DURATION)
+                .remove()
+                .select('.circle').attr('r',0);
 
-            // enter selection
+            // update selection (resize existing data based on the updated dataset)
+            $scope.node.select('.circle')
+                .attr('r',function(d) { return d['current_radius']; })
+                .transition()
+                .duration(cpi.UPDATE_TRANS_DURATION)
+                .attr("r",function(d) { return (d['current_radius']=r(d[key])); });
+
+            // enter selection (grow circles from 0 to their designated size)
             var enter = $scope.node.enter().append("g")
                   .attr("class","node")
                   //.on("click",function(d){do something on click})
-                  .call($scope.force.drag);
+                  .call($scope.force.drag); // allow the user to drag nodes around
 
             enter.append("circle")
                     .attr("class",function(d) { return "circle "+d.state; })
                     .attr("r",0).transition().duration(cpi.ENTER_TRANS_DURATION)
                     .attr("r",function(d) { return (d['current_radius']=r(d[key])); });
-
-            /*
-            var circles = $scope.chart.selectAll(".node")
-                    .data(data,function(d) { return d.urban_area; });
-
-            // update selection
-            circles.attr("r",function(d) {
-                return d['current_radius'];
-            }).transition().duration(cpi.UPDATE_TRANS_DURATION)
-                   .attr("r",function(d) { return (d['current_radius']=r(d[key])); })
-
-            // exit selection
-            circles.exit().transition().duration(cpi.EXIT_TRANS_DURATION).attr("r", 0).remove();
-
-            // enter selection
-            var enter = circles.enter().append("g")
-                  .attr("class","node")
-                  //.on("click",function(d){do something on click})
-                  .call($scope.force.drag);
-
-            enter.append("circle")
-                    .attr("class",function(d) { return "circle "+d.state; })
-                    .attr("r",0).transition().duration(cpi.ENTER_TRANS_DURATION)
-                    .attr("r",function(d) { return (d['current_radius']=r(d[key])); });
-            */
 
             $scope.status.working = false;
             console.debug('visualized '+$scope.data.viz_key,data);
