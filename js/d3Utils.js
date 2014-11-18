@@ -13,7 +13,7 @@ var CPI_D3_DATA_UTILS = (function() {
             'grocery items': 'grocery',
             'housing': 'housing',
             'goods and services': 'goods_services',
-            'composite index': 'index',
+            'composite index': 'composite_index',
             'urban area': 'urban_area'
         },
         state_re = /\s+[A-Z\-]+$/; // not all data is '..., STATE' with the comma so not including and some states aren't just states so including - as valid.
