@@ -3,13 +3,42 @@
 //@import "../lib/angular-multi-select/angular-multi-select.css"
 
 .chart {
-    border: 1px solid steelblue;
+    //border: 1px solid steelblue;
+    min-height: 625px;
 }
 
 .circle {
     fill: steelblue;
     stroke: #000;
     stroke-width: 2;
+}
+.cpi_info {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    border: 1px solid steelblue;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    h4 {
+        margin-top: 0px;
+        color: steelblue;
+    }
+    ul {
+        margin-bottom: 0px;
+    }
+    .cpi_info_control {
+        float:right;
+    }
+    .cpi_info_control.icons {
+        font-size: 1.5em;
+        margin-top: -8px;
+        margin-right: -2px;
+    }
+    .cpi_info_body {
+    }
 }
 $states: L OH GA NY LA TX IA AK SC WI OK NC GA-SC CA MD WA NJ ND VA ID MA KY MT FL VT NM UT IL WV TN WY CO MO AR IA-IL MI KS DE IN PA OR ND-MN AZ CT NE MS HI MO-KS NV NH MN ME RI SD MO-IL DC-VA VA-WV;
 @each $state in $states {
@@ -24,4 +53,7 @@ $states: L OH GA NY LA TX IA AK SC WI OK NC GA-SC CA MD WA NJ ND VA ID MA KY MT 
     i.#{$state} {
         color: rgb($red,$green,$blue);
     }
+}
+.circle.max {
+    stroke: #ff0000;
 }
