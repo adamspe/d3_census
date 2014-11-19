@@ -1,7 +1,7 @@
 @import url(../lib/bootstrap/dist/css/bootstrap.min.css);
 @import url(../lib/font-awesome/css/font-awesome.min.css);
 .chart {
-  min-height: 625px; }
+  min-height: 750px; }
 
 .moving-calculator {
   padding-top: 100px; }
@@ -10,6 +10,11 @@
   fill: steelblue;
   stroke: #000;
   stroke-width: 2; }
+
+line.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1px; }
 
 .cpi_info {
   position: absolute;
@@ -34,631 +39,634 @@
     margin-right: -2px; }
 
 .circle.L {
-  fill: #19dcf9;
-  stroke: #047d8f; }
+  fill: #16bb00;
+  stroke: #073b00; }
 
 .circle.L:hover {
-  fill: #047d8f;
+  fill: #073b00;
   stroke: steelblue; }
 
 i.L {
-  color: #19dcf9; }
+  color: #16bb00; }
 
 .circle.OH {
-  fill: #e84b94;
-  stroke: #9f1455; }
+  fill: #cc51f6;
+  stroke: #900abe; }
 
 .circle.OH:hover {
-  fill: #9f1455;
+  fill: #900abe;
   stroke: steelblue; }
 
 i.OH {
-  color: #e84b94; }
+  color: #cc51f6; }
 
 .circle.GA {
-  fill: #9d2d74;
-  stroke: #3a112b; }
+  fill: #b407d5;
+  stroke: #4c035a; }
 
 .circle.GA:hover {
-  fill: #3a112b;
+  fill: #4c035a;
   stroke: steelblue; }
 
 i.GA {
-  color: #9d2d74; }
+  color: #b407d5; }
 
 .circle.NY {
-  fill: #49042d;
-  stroke: black; }
+  fill: #458b7e;
+  stroke: #1b3631; }
 
 .circle.NY:hover {
-  fill: black;
+  fill: #1b3631;
   stroke: steelblue; }
 
 i.NY {
-  color: #49042d; }
+  color: #458b7e; }
 
 .circle.LA {
-  fill: #7e4dd9;
-  stroke: #431d89; }
+  fill: #b9a88c;
+  stroke: #7b694b; }
 
 .circle.LA:hover {
-  fill: #431d89;
+  fill: #7b694b;
   stroke: steelblue; }
 
 i.LA {
-  color: #7e4dd9; }
+  color: #b9a88c; }
 
 .circle.TX {
-  fill: #bf73e4;
-  stroke: #8523b5; }
+  fill: #1bcbe9;
+  stroke: #0c6979; }
 
 .circle.TX:hover {
-  fill: #8523b5;
+  fill: #0c6979;
   stroke: steelblue; }
 
 i.TX {
-  color: #bf73e4; }
+  color: #1bcbe9; }
 
 .circle.IA {
-  fill: #ac1a82;
-  stroke: #3d092e; }
+  fill: #7ccd57;
+  stroke: #427f26; }
 
 .circle.IA:hover {
-  fill: #3d092e;
+  fill: #427f26;
   stroke: steelblue; }
 
 i.IA {
-  color: #ac1a82; }
+  color: #7ccd57; }
 
 .circle.AK {
-  fill: #a1a8a1;
-  stroke: #616961; }
+  fill: #28b406;
+  stroke: #0d3902; }
 
 .circle.AK:hover {
-  fill: #616961;
+  fill: #0d3902;
   stroke: steelblue; }
 
 i.AK {
-  color: #a1a8a1; }
+  color: #28b406; }
 
 .circle.SC {
-  fill: #d02649;
-  stroke: #641223; }
+  fill: #bc44a4;
+  stroke: #5f2252; }
 
 .circle.SC:hover {
-  fill: #641223;
+  fill: #5f2252;
   stroke: steelblue; }
 
 i.SC {
-  color: #d02649; }
+  color: #bc44a4; }
 
 .circle.WI {
-  fill: #20773b;
-  stroke: #051309; }
+  fill: #cce38b;
+  stroke: #9ac02e; }
 
 .circle.WI:hover {
-  fill: #051309;
+  fill: #9ac02e;
   stroke: steelblue; }
 
 i.WI {
-  color: #20773b; }
+  color: #cce38b; }
 
 .circle.OK {
-  fill: #d5fef4;
-  stroke: #58fbd3; }
+  fill: #afe0a4;
+  stroke: #5bc045; }
 
 .circle.OK:hover {
-  fill: #58fbd3;
+  fill: #5bc045;
   stroke: steelblue; }
 
 i.OK {
-  color: #d5fef4; }
+  color: #afe0a4; }
 
 .circle.NC {
-  fill: #4cafa9;
-  stroke: #255653; }
+  fill: #125361;
+  stroke: black; }
 
 .circle.NC:hover {
-  fill: #255653;
+  fill: black;
   stroke: steelblue; }
 
 i.NC {
-  color: #4cafa9; }
+  color: #125361; }
 
 .circle.GA-SC {
-  fill: #3f35bb;
-  stroke: #1e1958; }
+  fill: #2c1ae8;
+  stroke: #150c77; }
 
 .circle.GA-SC:hover {
-  fill: #1e1958;
+  fill: #150c77;
   stroke: steelblue; }
 
 i.GA-SC {
-  color: #3f35bb; }
+  color: #2c1ae8; }
 
 .circle.CA {
-  fill: #352c13;
-  stroke: black; }
+  fill: #668e50;
+  stroke: #2b3c22; }
 
 .circle.CA:hover {
-  fill: black;
+  fill: #2b3c22;
   stroke: steelblue; }
 
 i.CA {
-  color: #352c13; }
+  color: #668e50; }
 
 .circle.MD {
-  fill: #6aa8b2;
-  stroke: #356067; }
+  fill: #73867f;
+  stroke: #38413e; }
 
 .circle.MD:hover {
-  fill: #356067;
+  fill: #38413e;
   stroke: steelblue; }
 
 i.MD {
-  color: #6aa8b2; }
+  color: #73867f; }
 
 .circle.WA {
-  fill: #d24418;
-  stroke: #601f0b; }
-
-.circle.WA:hover {
-  fill: #601f0b;
-  stroke: steelblue; }
-
-i.WA {
-  color: #d24418; }
-
-.circle.NJ {
-  fill: #0c3fa3;
-  stroke: #03112c; }
-
-.circle.NJ:hover {
-  fill: #03112c;
-  stroke: steelblue; }
-
-i.NJ {
-  color: #0c3fa3; }
-
-.circle.ND {
-  fill: #4707cc;
-  stroke: #1c0351; }
-
-.circle.ND:hover {
-  fill: #1c0351;
-  stroke: steelblue; }
-
-i.ND {
-  color: #4707cc; }
-
-.circle.VA {
-  fill: #b6bc56;
-  stroke: #65692a; }
-
-.circle.VA:hover {
-  fill: #65692a;
-  stroke: steelblue; }
-
-i.VA {
-  color: #b6bc56; }
-
-.circle.ID {
-  fill: #cb7baa;
-  stroke: #8e386b; }
-
-.circle.ID:hover {
-  fill: #8e386b;
-  stroke: steelblue; }
-
-i.ID {
-  color: #cb7baa; }
-
-.circle.MA {
-  fill: #893968;
-  stroke: #2f1424; }
-
-.circle.MA:hover {
-  fill: #2f1424;
-  stroke: steelblue; }
-
-i.MA {
-  color: #893968; }
-
-.circle.KY {
-  fill: #2ca01c;
-  stroke: #0e3309; }
-
-.circle.KY:hover {
-  fill: #0e3309;
-  stroke: steelblue; }
-
-i.KY {
-  color: #2ca01c; }
-
-.circle.MT {
-  fill: #f1256d;
-  stroke: #8d0938; }
-
-.circle.MT:hover {
-  fill: #8d0938;
-  stroke: steelblue; }
-
-i.MT {
-  color: #f1256d; }
-
-.circle.FL {
-  fill: #9df537;
-  stroke: #5ca408; }
-
-.circle.FL:hover {
-  fill: #5ca408;
-  stroke: steelblue; }
-
-i.FL {
-  color: #9df537; }
-
-.circle.VT {
-  fill: #2969ab;
-  stroke: #102a44; }
-
-.circle.VT:hover {
-  fill: #102a44;
-  stroke: steelblue; }
-
-i.VT {
-  color: #2969ab; }
-
-.circle.NM {
-  fill: #4e2164;
-  stroke: #030104; }
-
-.circle.NM:hover {
-  fill: #030104;
-  stroke: steelblue; }
-
-i.NM {
-  color: #4e2164; }
-
-.circle.UT {
-  fill: #d733b8;
-  stroke: #741762; }
-
-.circle.UT:hover {
-  fill: #741762;
-  stroke: steelblue; }
-
-i.UT {
-  color: #d733b8; }
-
-.circle.IL {
-  fill: #5adc02;
-  stroke: #265e01; }
-
-.circle.IL:hover {
-  fill: #265e01;
-  stroke: steelblue; }
-
-i.IL {
-  color: #5adc02; }
-
-.circle.WV {
-  fill: #5671fb;
-  stroke: #0526cd; }
-
-.circle.WV:hover {
-  fill: #0526cd;
-  stroke: steelblue; }
-
-i.WV {
-  color: #5671fb; }
-
-.circle.TN {
-  fill: #a6b573;
-  stroke: #626e3a; }
-
-.circle.TN:hover {
-  fill: #626e3a;
-  stroke: steelblue; }
-
-i.TN {
-  color: #a6b573; }
-
-.circle.WY {
-  fill: #7c2b4e;
-  stroke: #1d0a12; }
-
-.circle.WY:hover {
-  fill: #1d0a12;
-  stroke: steelblue; }
-
-i.WY {
-  color: #7c2b4e; }
-
-.circle.CO {
-  fill: #5de407;
-  stroke: #2b6803; }
-
-.circle.CO:hover {
-  fill: #2b6803;
-  stroke: steelblue; }
-
-i.CO {
-  color: #5de407; }
-
-.circle.MO {
-  fill: #ea23cd;
-  stroke: #810c70; }
-
-.circle.MO:hover {
-  fill: #810c70;
-  stroke: steelblue; }
-
-i.MO {
-  color: #ea23cd; }
-
-.circle.AR {
-  fill: #2fd5aa;
-  stroke: #166e57; }
-
-.circle.AR:hover {
-  fill: #166e57;
-  stroke: steelblue; }
-
-i.AR {
-  color: #2fd5aa; }
-
-.circle.IA-IL {
-  fill: #92e550;
-  stroke: #539e17; }
-
-.circle.IA-IL:hover {
-  fill: #539e17;
-  stroke: steelblue; }
-
-i.IA-IL {
-  color: #92e550; }
-
-.circle.MI {
-  fill: #675160;
-  stroke: #20191d; }
-
-.circle.MI:hover {
-  fill: #20191d;
-  stroke: steelblue; }
-
-i.MI {
-  color: #675160; }
-
-.circle.KS {
-  fill: #23c9c4;
-  stroke: #105c5a; }
-
-.circle.KS:hover {
-  fill: #105c5a;
-  stroke: steelblue; }
-
-i.KS {
-  color: #23c9c4; }
-
-.circle.DE {
-  fill: #e07111;
-  stroke: #693508; }
-
-.circle.DE:hover {
-  fill: #693508;
-  stroke: steelblue; }
-
-i.DE {
-  color: #e07111; }
-
-.circle.IN {
-  fill: #23f8da;
-  stroke: #059782; }
-
-.circle.IN:hover {
-  fill: #059782;
-  stroke: steelblue; }
-
-i.IN {
-  color: #23f8da; }
-
-.circle.PA {
-  fill: #bd443c;
-  stroke: #5c211d; }
-
-.circle.PA:hover {
-  fill: #5c211d;
-  stroke: steelblue; }
-
-i.PA {
-  color: #bd443c; }
-
-.circle.OR {
-  fill: #43dd03;
-  stroke: #1d5f01; }
-
-.circle.OR:hover {
-  fill: #1d5f01;
-  stroke: steelblue; }
-
-i.OR {
-  color: #43dd03; }
-
-.circle.ND-MN {
-  fill: #1762d5;
-  stroke: #0b2d62; }
-
-.circle.ND-MN:hover {
-  fill: #0b2d62;
-  stroke: steelblue; }
-
-i.ND-MN {
-  color: #1762d5; }
-
-.circle.AZ {
-  fill: #e80a65;
-  stroke: #6e0530; }
-
-.circle.AZ:hover {
-  fill: #6e0530;
-  stroke: steelblue; }
-
-i.AZ {
-  color: #e80a65; }
-
-.circle.CT {
-  fill: #2c6e1e;
-  stroke: #040a03; }
-
-.circle.CT:hover {
-  fill: #040a03;
-  stroke: steelblue; }
-
-i.CT {
-  color: #2c6e1e; }
-
-.circle.NE {
-  fill: #5fd623;
-  stroke: #2e6811; }
-
-.circle.NE:hover {
-  fill: #2e6811;
-  stroke: steelblue; }
-
-i.NE {
-  color: #5fd623; }
-
-.circle.MS {
-  fill: #cbcfc4;
-  stroke: #8d967e; }
-
-.circle.MS:hover {
-  fill: #8d967e;
-  stroke: steelblue; }
-
-i.MS {
-  color: #cbcfc4; }
-
-.circle.HI {
-  fill: #62b772;
-  stroke: #30693b; }
-
-.circle.HI:hover {
-  fill: #30693b;
-  stroke: steelblue; }
-
-i.HI {
-  color: #62b772; }
-
-.circle.MO-KS {
-  fill: #9182be;
-  stroke: #51427f; }
-
-.circle.MO-KS:hover {
-  fill: #51427f;
-  stroke: steelblue; }
-
-i.MO-KS {
-  color: #9182be; }
-
-.circle.NV {
-  fill: #4d0250;
+  fill: #01735b;
   stroke: black; }
 
-.circle.NV:hover {
+.circle.WA:hover {
   fill: black;
   stroke: steelblue; }
 
+i.WA {
+  color: #01735b; }
+
+.circle.NJ {
+  fill: #49027c;
+  stroke: black; }
+
+.circle.NJ:hover {
+  fill: black;
+  stroke: steelblue; }
+
+i.NJ {
+  color: #49027c; }
+
+.circle.ND {
+  fill: #0975fe;
+  stroke: #013c87; }
+
+.circle.ND:hover {
+  fill: #013c87;
+  stroke: steelblue; }
+
+i.ND {
+  color: #0975fe; }
+
+.circle.VA {
+  fill: #f5a838;
+  stroke: #a56508; }
+
+.circle.VA:hover {
+  fill: #a56508;
+  stroke: steelblue; }
+
+i.VA {
+  color: #f5a838; }
+
+.circle.ID {
+  fill: #47e709;
+  stroke: #216c04; }
+
+.circle.ID:hover {
+  fill: #216c04;
+  stroke: steelblue; }
+
+i.ID {
+  color: #47e709; }
+
+.circle.MA {
+  fill: #af9470;
+  stroke: #665339; }
+
+.circle.MA:hover {
+  fill: #665339;
+  stroke: steelblue; }
+
+i.MA {
+  color: #af9470; }
+
+.circle.KY {
+  fill: #49212b;
+  stroke: black; }
+
+.circle.KY:hover {
+  fill: black;
+  stroke: steelblue; }
+
+i.KY {
+  color: #49212b; }
+
+.circle.MT {
+  fill: #129666;
+  stroke: #042419; }
+
+.circle.MT:hover {
+  fill: #042419;
+  stroke: steelblue; }
+
+i.MT {
+  color: #129666; }
+
+.circle.FL {
+  fill: #237454;
+  stroke: #05120d; }
+
+.circle.FL:hover {
+  fill: #05120d;
+  stroke: steelblue; }
+
+i.FL {
+  color: #237454; }
+
+.circle.VT {
+  fill: #3b17df;
+  stroke: #1c0b6b; }
+
+.circle.VT:hover {
+  fill: #1c0b6b;
+  stroke: steelblue; }
+
+i.VT {
+  color: #3b17df; }
+
+.circle.NM {
+  fill: #5eddf8;
+  stroke: #09abce; }
+
+.circle.NM:hover {
+  fill: #09abce;
+  stroke: steelblue; }
+
+i.NM {
+  color: #5eddf8; }
+
+.circle.UT {
+  fill: #286e5f;
+  stroke: #06110e; }
+
+.circle.UT:hover {
+  fill: #06110e;
+  stroke: steelblue; }
+
+i.UT {
+  color: #286e5f; }
+
+.circle.IL {
+  fill: #1a6f9d;
+  stroke: #082230; }
+
+.circle.IL:hover {
+  fill: #082230;
+  stroke: steelblue; }
+
+i.IL {
+  color: #1a6f9d; }
+
+.circle.WV {
+  fill: #f01f43;
+  stroke: #86091f; }
+
+.circle.WV:hover {
+  fill: #86091f;
+  stroke: steelblue; }
+
+i.WV {
+  color: #f01f43; }
+
+.circle.TN {
+  fill: #aaea1c;
+  stroke: #587b0b; }
+
+.circle.TN:hover {
+  fill: #587b0b;
+  stroke: steelblue; }
+
+i.TN {
+  color: #aaea1c; }
+
+.circle.WY {
+  fill: #f65a8f;
+  stroke: #c60b4a; }
+
+.circle.WY:hover {
+  fill: #c60b4a;
+  stroke: steelblue; }
+
+i.WY {
+  color: #f65a8f; }
+
+.circle.CO {
+  fill: #3d148d;
+  stroke: #0d041d; }
+
+.circle.CO:hover {
+  fill: #0d041d;
+  stroke: steelblue; }
+
+i.CO {
+  color: #3d148d; }
+
+.circle.MO {
+  fill: #abdad1;
+  stroke: #52b3a1; }
+
+.circle.MO:hover {
+  fill: #52b3a1;
+  stroke: steelblue; }
+
+i.MO {
+  color: #abdad1; }
+
+.circle.AR {
+  fill: #3be69a;
+  stroke: #128f58; }
+
+.circle.AR:hover {
+  fill: #128f58;
+  stroke: steelblue; }
+
+i.AR {
+  color: #3be69a; }
+
+.circle.IA-IL {
+  fill: #d14046;
+  stroke: #751c20; }
+
+.circle.IA-IL:hover {
+  fill: #751c20;
+  stroke: steelblue; }
+
+i.IA-IL {
+  color: #d14046; }
+
+.circle.MI {
+  fill: #404206;
+  stroke: black; }
+
+.circle.MI:hover {
+  fill: black;
+  stroke: steelblue; }
+
+i.MI {
+  color: #404206; }
+
+.circle.KS {
+  fill: #cd8c23;
+  stroke: #604210; }
+
+.circle.KS:hover {
+  fill: #604210;
+  stroke: steelblue; }
+
+i.KS {
+  color: #cd8c23; }
+
+.circle.DE {
+  fill: #7bbd79;
+  stroke: #3e7a3c; }
+
+.circle.DE:hover {
+  fill: #3e7a3c;
+  stroke: steelblue; }
+
+i.DE {
+  color: #7bbd79; }
+
+.circle.IN {
+  fill: #9421aa;
+  stroke: #370c3f; }
+
+.circle.IN:hover {
+  fill: #370c3f;
+  stroke: steelblue; }
+
+i.IN {
+  color: #9421aa; }
+
+.circle.PA {
+  fill: #317ff4;
+  stroke: #08449d; }
+
+.circle.PA:hover {
+  fill: #08449d;
+  stroke: steelblue; }
+
+i.PA {
+  color: #317ff4; }
+
+.circle.OR {
+  fill: #187638;
+  stroke: #020c06; }
+
+.circle.OR:hover {
+  fill: #020c06;
+  stroke: steelblue; }
+
+i.OR {
+  color: #187638; }
+
+.circle.ND-MN {
+  fill: #2763c8;
+  stroke: #122e5d; }
+
+.circle.ND-MN:hover {
+  fill: #122e5d;
+  stroke: steelblue; }
+
+i.ND-MN {
+  color: #2763c8; }
+
+.circle.AZ {
+  fill: #b766ff;
+  stroke: #7900e5; }
+
+.circle.AZ:hover {
+  fill: #7900e5;
+  stroke: steelblue; }
+
+i.AZ {
+  color: #b766ff; }
+
+.circle.CT {
+  fill: #c1e9d2;
+  stroke: #63c88e; }
+
+.circle.CT:hover {
+  fill: #63c88e;
+  stroke: steelblue; }
+
+i.CT {
+  color: #c1e9d2; }
+
+.circle.NE {
+  fill: #3b2e2f;
+  stroke: black; }
+
+.circle.NE:hover {
+  fill: black;
+  stroke: steelblue; }
+
+i.NE {
+  color: #3b2e2f; }
+
+.circle.MS {
+  fill: #47755a;
+  stroke: #17261d; }
+
+.circle.MS:hover {
+  fill: #17261d;
+  stroke: steelblue; }
+
+i.MS {
+  color: #47755a; }
+
+.circle.HI {
+  fill: #eaad2a;
+  stroke: #87600d; }
+
+.circle.HI:hover {
+  fill: #87600d;
+  stroke: steelblue; }
+
+i.HI {
+  color: #eaad2a; }
+
+.circle.MO-KS {
+  fill: #1b3b78;
+  stroke: #040810; }
+
+.circle.MO-KS:hover {
+  fill: #040810;
+  stroke: steelblue; }
+
+i.MO-KS {
+  color: #1b3b78; }
+
+.circle.NV {
+  fill: #624fdc;
+  stroke: #2c1c8f; }
+
+.circle.NV:hover {
+  fill: #2c1c8f;
+  stroke: steelblue; }
+
 i.NV {
-  color: #4d0250; }
+  color: #624fdc; }
 
 .circle.NH {
-  fill: #be1601;
-  stroke: #3f0700; }
+  fill: #044141;
+  stroke: black; }
 
 .circle.NH:hover {
-  fill: #3f0700;
+  fill: black;
   stroke: steelblue; }
 
 i.NH {
-  color: #be1601; }
+  color: #044141; }
 
 .circle.MN {
-  fill: #586f18;
-  stroke: #050601; }
+  fill: #1f08b4;
+  stroke: #0a033a; }
 
 .circle.MN:hover {
-  fill: #050601;
+  fill: #0a033a;
   stroke: steelblue; }
 
 i.MN {
-  color: #586f18; }
+  color: #1f08b4; }
 
 .circle.ME {
-  fill: #e245ca;
-  stroke: #91177e; }
+  fill: #fae1dc;
+  stroke: #ea816c; }
 
 .circle.ME:hover {
-  fill: #91177e;
+  fill: #ea816c;
   stroke: steelblue; }
 
 i.ME {
-  color: #e245ca; }
+  color: #fae1dc; }
 
 .circle.RI {
-  fill: #708336;
-  stroke: #232911; }
+  fill: #cb184e;
+  stroke: #590b22; }
 
 .circle.RI:hover {
-  fill: #232911;
+  fill: #590b22;
   stroke: steelblue; }
 
 i.RI {
-  color: #708336; }
+  color: #cb184e; }
 
 .circle.SD {
-  fill: #eafec3;
-  stroke: #befc46; }
+  fill: #54b3e0;
+  stroke: #1c7199; }
 
 .circle.SD:hover {
-  fill: #befc46;
+  fill: #1c7199;
   stroke: steelblue; }
 
 i.SD {
-  color: #eafec3; }
+  color: #54b3e0; }
 
 .circle.MO-IL {
-  fill: #e6b257;
-  stroke: #a57219; }
+  fill: #be920b;
+  stroke: #453504; }
 
 .circle.MO-IL:hover {
-  fill: #a57219;
+  fill: #453504;
   stroke: steelblue; }
 
 i.MO-IL {
-  color: #e6b257; }
+  color: #be920b; }
 
 .circle.DC-VA {
-  fill: #01b19e;
-  stroke: #00322d; }
+  fill: #469cd6;
+  stroke: #1c5880; }
 
 .circle.DC-VA:hover {
-  fill: #00322d;
+  fill: #1c5880;
   stroke: steelblue; }
 
 i.DC-VA {
-  color: #01b19e; }
+  color: #469cd6; }
 
 .circle.VA-WV {
-  fill: #357724;
-  stroke: #091506; }
+  fill: #06682c;
+  stroke: black; }
 
 .circle.VA-WV:hover {
-  fill: #091506;
+  fill: black;
   stroke: steelblue; }
 
 i.VA-WV {
-  color: #357724; }
+  color: #06682c; }
+
+.circle.parent {
+  stroke: orange; }
 
 .circle.max {
   stroke: #ff0000; }

@@ -67,11 +67,16 @@ var CPI_D3_DATA_UTILS = (function() {
                     if(d.state) {
                         if(!byStateData.data[d.state]) {
                             byStateData.data[d.state] = {
+                                state: d.state,
                                 label: d.state,
-                                data:[]
+                                children:[]
                             };
+                            cb(byStateData.data[d.state]);
                         }
-                        byStateData.data[d.state].data.push(d);
+                        if(d.urban_area) {
+                            d.label = d.urban_area;
+                        }
+                        byStateData.data[d.state].children.push(d);
                         if(cb){
                             cb(d);
                         }

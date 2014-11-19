@@ -4,7 +4,7 @@
 
 .chart {
     //border: 1px solid steelblue;
-    min-height: 625px;
+    min-height: 750px;
 }
 .moving-calculator {
     padding-top: 100px;
@@ -13,6 +13,11 @@
     fill: steelblue;
     stroke: #000;
     stroke-width: 2;
+}
+line.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1px;
 }
 .cpi_info {
     position: absolute;
@@ -59,6 +64,9 @@ $states: L OH GA NY LA TX IA AK SC WI OK NC GA-SC CA MD WA NJ ND VA ID MA KY MT 
     i.#{$state} {
         color: rgb($red,$green,$blue);
     }
+}
+.circle.parent {
+    stroke: orange;
 }
 .circle.max {
     stroke: #ff0000;
