@@ -14,15 +14,7 @@
     "tests"
   ],
   "devDependencies": {
-    "jquery": "~2.1",
-    "bootstrap": "3.2.0",
-    "angular": "1.2.26",
-    "angular-route": "1.2.26",
-    "angular-resource": "1.2.26",
-    "angular-sanitize": "1.2.26",
     "angular-bootstrap": "0.11.0",
-    "angular-multi-select": "~2.0.1",
-    "font-awesome": "~4.1.0",
-    "d3" : "~3.4.11"
+    "angular-multi-select": "~2.0.1"
   }
 }
