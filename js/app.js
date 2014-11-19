@@ -160,7 +160,7 @@ angular.module('cpi.d3',[
                                 $scope.cpiInfoState = d.state;
                             });
                             $scope.tooltip.select('.cpi_info_body').html(html);
-                            $scope.tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");
+                            $scope.tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");
                             return $scope.tooltip.style("visibility", "visible");
                         } else {
                             // clicking ona state toggle display of state children.
