@@ -6,14 +6,40 @@
     <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
-    <div class="container" ng-controller="CpiVisController">
+    <div class="container ng-cloak" ng-controller="CpiVisController" ng-cloak>
         <div class="row">
             <div class="col-md-12">
-                <h2>D3 Tinkering...</h2>
+                <h2>{{data.labels[data.viz_key]}}</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3 moving-calculator">
+                <h4>Moving</h4>
+                <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-addon">From</div>
+                    <input type="text" class="form-control" ng-model="movingFrom" typeahead="area as area.urban_area for area in current | filter:$viewValue | limitTo:10" />
+                  </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                    <div class="input-group-addon">To</div>
+                    <input type="text" class="form-control" ng-model="movingTo" typeahead="area as area.urban_area for area in current | filter:$viewValue | limitTo:10" />
+                  </div>
+                </div>
+                <div>
+
+                <dl class="dl-horizontal">
+                  <dt ng-if="fromPcnt != null">From:</dt><dd ng-if="fromPcnt != null">{{fromPcnt | number:2}}%</dd>
+                  <dt ng-if="toPcnt != null">To:</dt><dd ng-if="toPcnt != null">{{toPcnt | number:2}}%</dd>
+                  <dt ng-if="costChange != null">Cost Change:</dt><dd ng-if="costChange != null">{{costChange | number:2}}%</dd>
+                </dl>
+                    <!--div ng-if="fromPcnt != null"><label>From:</label> {{fromPcnt | number:2}}%</div>
+                    <div ng-if="toPcnt != null"><label>To:</label> {{toPcnt | number:2}}%</div>
+                    <div ng-if="costChange != null"><label>Cost Change:</label> {{costChange | number:2}}%</div-->
+                </div>
+            </div>
+            <div class="col-md-9">
                 <svg class="chart"></svg>
             </div>
         </div>

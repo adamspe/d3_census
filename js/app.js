@@ -1,5 +1,5 @@
 cpi = {
-    CHART_W: 1165,
+    CHART_W: 877,
     CHART_H: 625,
     SMALLEST_R: 2,
     BIGGEST_R: 30,
@@ -45,7 +45,6 @@ angular.module('cpi.d3',[
             }
         }
 
-
         $scope.visualize = function() {
             $scope.closeCpiInfo();
             var data = $scope.data.selections.reduce(function(prev,curr,idx,arr){
@@ -55,6 +54,9 @@ angular.module('cpi.d3',[
             key = $scope.data.viz_key,
             w = cpi.CHART_W,
             h = cpi.CHART_H;
+
+            $scope.current = data;
+            areYouMoving();
 
             // restart the layout
             $scope.force.nodes(data).start();
@@ -153,4 +155,22 @@ angular.module('cpi.d3',[
                 $scope.visualize();
             });
         });
+
+        function areYouMoving() {
+            console.debug('from',$scope.movingFrom);
+            console.debug('to',$scope.movingTo);
+            $scope.fromPcnt = $scope.data && $scope.data.viz_key && $scope.movingFrom ?
+                $scope.movingFrom[$scope.data.viz_key] : null;
+            $scope.toPcnt = $scope.data && $scope.data.viz_key && $scope.movingTo ?
+                $scope.movingTo[$scope.data.viz_key] : null;
+            if($scope.fromPcnt && $scope.toPcnt) {
+                var pcntFrom = $scope.fromPcnt,
+                    pcntTo = $scope.toPcnt;
+                $scope.costChange=((pcntTo-pcntFrom)/pcntFrom)*100.0;
+            } else {
+                $scope.costChange = null;
+            }
+        }
+        $scope.$watch('movingFrom',areYouMoving);
+        $scope.$watch('movingTo',areYouMoving);
 }]);

@@ -3,6 +3,9 @@
 .chart {
   min-height: 625px; }
 
+.moving-calculator {
+  padding-top: 100px; }
+
 .circle {
   fill: steelblue;
   stroke: #000;
@@ -31,403 +34,403 @@
     margin-right: -2px; }
 
 .circle.L {
-  fill: #2df52b;
-  stroke: #099907; }
+  fill: #4801b4;
+  stroke: #150035; }
 
 i.L {
-  color: #2df52b; }
+  color: #4801b4; }
 
 .circle.OH {
-  fill: #30353c;
-  stroke: black; }
+  fill: #163b8a;
+  stroke: #040c1c; }
 
 i.OH {
-  color: #30353c; }
+  color: #163b8a; }
 
 .circle.GA {
-  fill: #17ddf3;
-  stroke: #077784; }
+  fill: #da86ab;
+  stroke: #ac3569; }
 
 i.GA {
-  color: #17ddf3; }
+  color: #da86ab; }
 
 .circle.NY {
-  fill: #549698;
-  stroke: #274546; }
+  fill: #9c8b9c;
+  stroke: #5a4d5a; }
 
 i.NY {
-  color: #549698; }
+  color: #9c8b9c; }
 
 .circle.LA {
-  fill: #1ff824;
-  stroke: #059308; }
+  fill: #27e3bb;
+  stroke: #107b64; }
 
 i.LA {
-  color: #1ff824; }
+  color: #27e3bb; }
 
 .circle.TX {
-  fill: #d5bed6;
-  stroke: #a270a5; }
+  fill: #afee7f;
+  stroke: #6ad21c; }
 
 i.TX {
-  color: #d5bed6; }
+  color: #afee7f; }
 
 .circle.IA {
-  fill: #772509;
-  stroke: black; }
+  fill: #a6300d;
+  stroke: #300e04; }
 
 i.IA {
-  color: #772509; }
+  color: #a6300d; }
 
 .circle.AK {
-  fill: #038e0d;
-  stroke: #001102; }
+  fill: #564006;
+  stroke: black; }
 
 i.AK {
-  color: #038e0d; }
+  color: #564006; }
 
 .circle.SC {
-  fill: #658fd6;
-  stroke: #275094; }
+  fill: #d2d479;
+  stroke: #999c32; }
 
 i.SC {
-  color: #658fd6; }
+  color: #d2d479; }
 
 .circle.WI {
-  fill: #17b772;
-  stroke: #09462b; }
+  fill: #9ce45f;
+  stroke: #5ca71c; }
 
 i.WI {
-  color: #17b772; }
+  color: #9ce45f; }
 
 .circle.OK {
-  fill: #1fbe61;
-  stroke: #0d5029; }
+  fill: #4433b9;
+  stroke: #1f1755; }
 
 i.OK {
-  color: #1fbe61; }
+  color: #4433b9; }
 
 .circle.NC {
-  fill: #15075b;
-  stroke: black; }
+  fill: #993fba;
+  stroke: #4b1f5b; }
 
 i.NC {
-  color: #15075b; }
+  color: #993fba; }
 
 .circle.GA-SC {
-  fill: #8e975f;
-  stroke: #44492e; }
+  fill: #8da2cd;
+  stroke: #435f98; }
 
 i.GA-SC {
-  color: #8e975f; }
+  color: #8da2cd; }
 
 .circle.CA {
-  fill: #d2631a;
-  stroke: #612e0c; }
+  fill: #e89422;
+  stroke: #7d4e0d; }
 
 i.CA {
-  color: #d2631a; }
+  color: #e89422; }
 
 .circle.MD {
-  fill: #22b2ab;
-  stroke: #0e4744; }
+  fill: #7026bc;
+  stroke: #311152; }
 
 i.MD {
-  color: #22b2ab; }
+  color: #7026bc; }
 
 .circle.WA {
-  fill: #8872af;
-  stroke: #4b3a67; }
+  fill: #0fb04d;
+  stroke: #053b1a; }
 
 i.WA {
-  color: #8872af; }
+  color: #0fb04d; }
 
 .circle.NJ {
-  fill: #fbf096;
-  stroke: #f6de1b; }
+  fill: #e7f8bd;
+  stroke: #bdec4a; }
 
 i.NJ {
-  color: #fbf096; }
+  color: #e7f8bd; }
 
 .circle.ND {
-  fill: #943861;
-  stroke: #371524; }
+  fill: #b42d0b;
+  stroke: #3c0f04; }
 
 i.ND {
-  color: #943861; }
+  color: #b42d0b; }
 
 .circle.VA {
-  fill: #fbb7bf;
-  stroke: #f43e54; }
+  fill: #4012cc;
+  stroke: #1b0857; }
 
 i.VA {
-  color: #fbb7bf; }
+  color: #4012cc; }
 
 .circle.ID {
-  fill: #791451;
-  stroke: #0c0208; }
+  fill: #3264aa;
+  stroke: #152a47; }
 
 i.ID {
-  color: #791451; }
+  color: #3264aa; }
 
 .circle.MA {
-  fill: #6f3754;
-  stroke: #1a0d13; }
+  fill: #7bfa82;
+  stroke: #09ed16; }
 
 i.MA {
-  color: #6f3754; }
+  color: #7bfa82; }
 
 .circle.KY {
-  fill: #03b3ab;
-  stroke: #013633; }
+  fill: #ce049b;
+  stroke: #51023d; }
 
 i.KY {
-  color: #03b3ab; }
+  color: #ce049b; }
 
 .circle.MT {
-  fill: #ebe220;
-  stroke: #807b0b; }
+  fill: #d892f9;
+  stroke: #ad19f2; }
 
 i.MT {
-  color: #ebe220; }
+  color: #d892f9; }
 
 .circle.FL {
-  fill: #744398;
-  stroke: #301c40; }
+  fill: #29a764;
+  stroke: #104127; }
 
 i.FL {
-  color: #744398; }
+  color: #29a764; }
 
 .circle.VT {
-  fill: #3906fb;
-  stroke: #1c027f; }
+  fill: #30b85d;
+  stroke: #16532a; }
 
 i.VT {
-  color: #3906fb; }
+  color: #30b85d; }
 
 .circle.NM {
-  fill: #124b74;
-  stroke: #010406; }
+  fill: #e94101;
+  stroke: #6a1e00; }
 
 i.NM {
-  color: #124b74; }
+  color: #e94101; }
 
 .circle.UT {
-  fill: #977b1d;
-  stroke: #2c2408; }
+  fill: #ddbe67;
+  stroke: #a18024; }
 
 i.UT {
-  color: #977b1d; }
+  color: #ddbe67; }
 
 .circle.IL {
-  fill: #0ca2ed;
-  stroke: #064f74; }
+  fill: #64c798;
+  stroke: #2e7e58; }
 
 i.IL {
-  color: #0ca2ed; }
+  color: #64c798; }
 
 .circle.WV {
-  fill: #7cf946;
-  stroke: #3cb906; }
+  fill: #10d71e;
+  stroke: #07600d; }
 
 i.WV {
-  color: #7cf946; }
+  color: #10d71e; }
 
 .circle.TN {
-  fill: #62313d;
-  stroke: #0d0708; }
-
-i.TN {
-  color: #62313d; }
-
-.circle.WY {
-  fill: #0a31f9;
-  stroke: #031880; }
-
-i.WY {
-  color: #0a31f9; }
-
-.circle.CO {
-  fill: #ed1161;
-  stroke: #760830; }
-
-i.CO {
-  color: #ed1161; }
-
-.circle.MO {
-  fill: #336ba4;
-  stroke: #152c43; }
-
-i.MO {
-  color: #336ba4; }
-
-.circle.AR {
-  fill: #2c42fa;
-  stroke: #0415a3; }
-
-i.AR {
-  color: #2c42fa; }
-
-.circle.IA-IL {
-  fill: #cc7c89;
-  stroke: #903847; }
-
-i.IA-IL {
-  color: #cc7c89; }
-
-.circle.MI {
-  fill: #6810cf;
-  stroke: #2d0759; }
-
-i.MI {
-  color: #6810cf; }
-
-.circle.KS {
-  fill: #84c082;
-  stroke: #438141; }
-
-i.KS {
-  color: #84c082; }
-
-.circle.DE {
-  fill: #86f494;
-  stroke: #15e62f; }
-
-i.DE {
-  color: #86f494; }
-
-.circle.IN {
-  fill: #671196;
-  stroke: #180423; }
-
-i.IN {
-  color: #671196; }
-
-.circle.PA {
-  fill: #b2d8ad;
-  stroke: #61af57; }
-
-i.PA {
-  color: #b2d8ad; }
-
-.circle.OR {
-  fill: #5dddc2;
-  stroke: #209a80; }
-
-i.OR {
-  color: #5dddc2; }
-
-.circle.ND-MN {
-  fill: #9673a0;
-  stroke: #523c58; }
-
-i.ND-MN {
-  color: #9673a0; }
-
-.circle.AZ {
-  fill: #698056;
-  stroke: #2a3423; }
-
-i.AZ {
-  color: #698056; }
-
-.circle.CT {
-  fill: #239dc4;
-  stroke: #104658; }
-
-i.CT {
-  color: #239dc4; }
-
-.circle.NE {
-  fill: #96a317;
-  stroke: #2f3307; }
-
-i.NE {
-  color: #96a317; }
-
-.circle.MS {
-  fill: #38ef9d;
-  stroke: #0c9b5b; }
-
-i.MS {
-  color: #38ef9d; }
-
-.circle.HI {
-  fill: #0c19e8;
-  stroke: #060c6f; }
-
-i.HI {
-  color: #0c19e8; }
-
-.circle.MO-KS {
-  fill: #4fb177;
-  stroke: #27593c; }
-
-i.MO-KS {
-  color: #4fb177; }
-
-.circle.NV {
-  fill: #5e3c14;
+  fill: #2a3213;
   stroke: black; }
 
+i.TN {
+  color: #2a3213; }
+
+.circle.WY {
+  fill: #b5a62b;
+  stroke: #4e4813; }
+
+i.WY {
+  color: #b5a62b; }
+
+.circle.CO {
+  fill: #f6349f;
+  stroke: #a3075d; }
+
+i.CO {
+  color: #f6349f; }
+
+.circle.MO {
+  fill: #4d9fbb;
+  stroke: #265363; }
+
+i.MO {
+  color: #4d9fbb; }
+
+.circle.AR {
+  fill: #9bff30;
+  stroke: #5bb000; }
+
+i.AR {
+  color: #9bff30; }
+
+.circle.IA-IL {
+  fill: #41dcb3;
+  stroke: #188568; }
+
+i.IA-IL {
+  color: #41dcb3; }
+
+.circle.MI {
+  fill: #2575e5;
+  stroke: #0f3c7c; }
+
+i.MI {
+  color: #2575e5; }
+
+.circle.KS {
+  fill: #80bd5a;
+  stroke: #446c2b; }
+
+i.KS {
+  color: #80bd5a; }
+
+.circle.DE {
+  fill: #688162;
+  stroke: #2e392b; }
+
+i.DE {
+  color: #688162; }
+
+.circle.IN {
+  fill: #3113f7;
+  stroke: #160586; }
+
+i.IN {
+  color: #3113f7; }
+
+.circle.PA {
+  fill: #773705;
+  stroke: black; }
+
+i.PA {
+  color: #773705; }
+
+.circle.OR {
+  fill: #d05d81;
+  stroke: #862745; }
+
+i.OR {
+  color: #d05d81; }
+
+.circle.ND-MN {
+  fill: #8c25a3;
+  stroke: #330d3b; }
+
+i.ND-MN {
+  color: #8c25a3; }
+
+.circle.AZ {
+  fill: #3d00dd;
+  stroke: #1a005e; }
+
+i.AZ {
+  color: #3d00dd; }
+
+.circle.CT {
+  fill: #4cb05f;
+  stroke: #26572f; }
+
+i.CT {
+  color: #4cb05f; }
+
+.circle.NE {
+  fill: #419fd6;
+  stroke: #1b597d; }
+
+i.NE {
+  color: #419fd6; }
+
+.circle.MS {
+  fill: #e7cf51;
+  stroke: #a28c16; }
+
+i.MS {
+  color: #e7cf51; }
+
+.circle.HI {
+  fill: #c5ac6e;
+  stroke: #806a33; }
+
+i.HI {
+  color: #c5ac6e; }
+
+.circle.MO-KS {
+  fill: #6f7064;
+  stroke: #2c2d28; }
+
+i.MO-KS {
+  color: #6f7064; }
+
+.circle.NV {
+  fill: #229d16;
+  stroke: #0a2d06; }
+
 i.NV {
-  color: #5e3c14; }
+  color: #229d16; }
 
 .circle.NH {
-  fill: #ce2f41;
-  stroke: #661720; }
+  fill: #3fcb6e;
+  stroke: #1e6d38; }
 
 i.NH {
-  color: #ce2f41; }
+  color: #3fcb6e; }
 
 .circle.MN {
-  fill: #d535e5;
-  stroke: #7e1289; }
+  fill: #50a197;
+  stroke: #264c47; }
 
 i.MN {
-  color: #d535e5; }
+  color: #50a197; }
 
 .circle.ME {
-  fill: #b99171;
-  stroke: #725238; }
+  fill: #965878;
+  stroke: #462938; }
 
 i.ME {
-  color: #b99171; }
+  color: #965878; }
 
 .circle.RI {
-  fill: #227fec;
-  stroke: #0b4283; }
+  fill: #f2c28b;
+  stroke: #e4861a; }
 
 i.RI {
-  color: #227fec; }
+  color: #f2c28b; }
 
 .circle.SD {
-  fill: #b576d0;
-  stroke: #773394; }
+  fill: #3e2764;
+  stroke: #050308; }
 
 i.SD {
-  color: #b576d0; }
+  color: #3e2764; }
 
 .circle.MO-IL {
-  fill: #af2ccb;
-  stroke: #551562; }
+  fill: #906f28;
+  stroke: #2c220c; }
 
 i.MO-IL {
-  color: #af2ccb; }
+  color: #906f28; }
 
 .circle.DC-VA {
-  fill: #50c8e4;
-  stroke: #18839c; }
+  fill: #d40322;
+  stroke: #56010e; }
 
 i.DC-VA {
-  color: #50c8e4; }
+  color: #d40322; }
 
 .circle.VA-WV {
-  fill: #52cf3c;
-  stroke: #28701c; }
+  fill: #191e22;
+  stroke: black; }
 
 i.VA-WV {
-  color: #52cf3c; }
+  color: #191e22; }
 
 .circle.max {
   stroke: #ff0000; }
