@@ -59,7 +59,7 @@ var CPI_D3_DATA_UTILS = (function() {
             }
             return map_data(d,missing_map);
         },
-        byState: function(data) {
+        byState: function(data,cb) {
             var byStateData = {labels:{},data:{}};
             if(data && data.length) {
                 byStateData.labels = data[0].meta.key_map;
@@ -72,6 +72,9 @@ var CPI_D3_DATA_UTILS = (function() {
                             };
                         }
                         byStateData.data[d.state].data.push(d);
+                        if(cb){
+                            cb(d);
+                        }
                     } else {
                         console.error("data item doesn't have a state",d);
                     }

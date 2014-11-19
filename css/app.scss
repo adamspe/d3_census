@@ -52,6 +52,10 @@ $states: L OH GA NY LA TX IA AK SC WI OK NC GA-SC CA MD WA NJ ND VA ID MA KY MT 
         fill: $rgb;
         stroke: darken($rgb,25%);
     }
+    .circle.#{$state}:hover {
+        fill: darken($rgb,25%);
+        stroke: steelblue;
+    }
     i.#{$state} {
         color: rgb($red,$green,$blue);
     }

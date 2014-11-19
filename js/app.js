@@ -114,7 +114,11 @@ angular.module('cpi.d3',[
 
             enter.append("circle")
                     .attr("class",setClass)
-                    .on("mouseover", function(d){
+                    .attr('id',function(d){ return d.recordId; })
+                    .on('mouseover',function(d){
+
+                    })
+                    .on("click", function(d){
                         var html = '<h4>'+d.urban_area+'</h4>',key;
                         html += '<ul class="list-unstyled">';
                         for(key in $scope.data.labels) {
@@ -138,8 +142,10 @@ angular.module('cpi.d3',[
         };
         d3.csv("data.csv", CPI_D3_DATA_UTILS.d3, function(error, data) {
             $scope.$apply(function(){
-                var state;
-                $scope.data = CPI_D3_DATA_UTILS.byState(data);
+                var state,idx = 0;
+                $scope.data = CPI_D3_DATA_UTILS.byState(data,function(d){
+                    d.recordId = 'record_'+idx++;
+                });
                 delete $scope.data.labels.urban_area;
                 delete $scope.data.labels.state;
                 console.debug('data',$scope.data);
