@@ -2,12 +2,23 @@
 @import "../lib/font-awesome/css/font-awesome.min.css";
 //@import "../lib/angular-multi-select/angular-multi-select.css"
 
+.disclaimer {
+    float: right;
+    font-size: .75em;
+}
+.instructions {
+    font-family: serif;
+//margin-top: 50px;
+}
+.movingResults {
+    min-height: 60px;
+}
 .chart {
     //border: 1px solid steelblue;
     min-height: 750px;
 }
 .moving-calculator {
-    padding-top: 100px;
+    padding-top: 30px;
 }
 .circle {
     fill: steelblue;

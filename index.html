@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="form-group">
                     <label>Include States</label>
                     <div multi-select
@@ -54,20 +54,44 @@
                     <input type="text" class="form-control" ng-model="movingTo" typeahead="area as area.urban_area for area in current | filter:$viewValue | limitTo:10" />
                   </div>
                 </div>
-                <div>
 
-                <dl class="dl-horizontal">
-                  <dt ng-if="fromPcnt != null">From:</dt><dd ng-if="fromPcnt != null">{{fromPcnt | number:2}}%</dd>
-                  <dt ng-if="toPcnt != null">To:</dt><dd ng-if="toPcnt != null">{{toPcnt | number:2}}%</dd>
-                  <dt ng-if="costChange != null">Cost Change:</dt><dd ng-if="costChange != null">{{costChange | number:2}}%</dd>
-                </dl>
+                <div>
+                    <dl class="dl-horizontal movingResults">
+                      <dt ng-if="fromPcnt != null">From:</dt><dd ng-if="fromPcnt != null">{{fromPcnt | number:2}}%</dd>
+                      <dt ng-if="toPcnt != null">To:</dt><dd ng-if="toPcnt != null">{{toPcnt | number:2}}%</dd>
+                      <dt ng-if="costChange != null">Cost Change:</dt><dd ng-if="costChange != null">{{costChange | number:2}}%</dd>
+                    </dl>
                     <!--div ng-if="fromPcnt != null"><label>From:</label> {{fromPcnt | number:2}}%</div>
                     <div ng-if="toPcnt != null"><label>To:</label> {{toPcnt | number:2}}%</div>
                     <div ng-if="costChange != null"><label>Cost Change:</label> {{costChange | number:2}}%</div-->
                 </div>
+
+                <div class="instructions">
+                    <ul>
+                        <li>urban areas satellite the state they are found in.</li>
+                        <li>you can drag all the bubbles around to rearrange stuff.</li>
+                        <li>the size of an urban area's bubble indicates its % in relation to all other data being considered (changes as what states are included/excluded changes).</li>
+                        <li>click on a state's bubble to show/hide its urban areas (areas still included in data set even if hidden).</li>
+                        <li>click on an urban area bubble to see census data for that area.</li>
+                        <li>use the 'Included States' control to choose the set of states you're interested in.</li>
+                        <li>when viewing an urban area's census data you can choose to exclude that state's areas from the data set.</li>
+                        <li>if you look closely one urban area will have a bright red border.  that area has the largest % of all areas currently being considered.</li>
+                        <li>if you're considering moving use the 'Moving From/To' inputs to see the cost difference between two urban areas for the item currently
+                            selected  in the 'Visualize' control.</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-md-9">
                 <svg class="chart"></svg>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-unstyled disclaimer">
+                <li>Data downloaded from <a href="https://www.census.gov/compendia/statab/cats/prices/consumer_price_indexes_cost_of_living_index.html" target="_blank">www.census.gov</a>.</li>
+                <li>Cost of living index interpretation formula from <a href="http://www.coli.org/Interpretation.asp" target="_blank">www.coli.org</a>.</li>
+                </ul>
+            </ul>
             </div>
         </div>
 
